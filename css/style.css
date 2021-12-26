@@ -1,0 +1,271 @@
+/* ----------------Paramètre général----------*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.space-around{
+    justify-content: space-between;
+}
+.warp{
+    flex-wrap: wrap;
+}
+h2{
+    font-family: 'Oxygen';
+    font-weight: 600;
+    font-size: 2rem;
+}
+h4{
+    font-family: 'Oxygen';
+    font-weight: 400;
+}
+p{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+/*---------- nav-------------*/
+.fontNav{
+   font-family: 'Open Sans Condensed', sans-serif, Arial, Helvetica;
+   font-size: 1.5rem; 
+   font-weight: 200;
+}
+.flex:hover{
+    color: #5972C2;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: thick double black;
+}
+
+body{
+    width: 100%;
+}
+
+/*-------- bannière----------------- */
+.bannière{
+    width: 100%;
+    height: 400px;
+}
+.MaPhoto__Set{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    top: -200px;
+    left: 600px;
+    border: thick double black;
+}
+.MaPhoto__Set:hover{
+    filter: brightness(115%);
+    border: thick double #5972C2;
+    box-shadow: 2px 2px 12px grey;
+    transition: 0.3s ease-in-out;
+    scale: 1.1;
+}
+/*----------- section ------------- */
+.Description{
+    width: 60%;
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+    top: -150px;
+    left: 300px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MoiInfo{
+    width: 100%;
+    justify-content: center;
+    font-family: 'Oxygen';
+    font-size: 20px;
+    position: relative;
+    top: -160px;
+    
+
+}
+.btnDL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#9356DC, #FF79DA);
+    border-radius: 40px;
+    box-shadow: 1px 1px 8px grey;
+    width: 350px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 550px;
+    top: -100px;
+    font-weight: 600;
+}
+.btnDL:hover{
+    filter: brightness(115%);
+    box-shadow: 2px 2px 12px grey;
+    transition: 0.3s ease-in-out;
+    scale: 1.1;
+}
+/*----------------- article------------------------- */
+
+article{
+    border-top: thick double black;;
+    margin-bottom: 10px;
+}
+
+.marge{
+    margin-left: 20px;
+}
+
+.info-width{
+    width: 50%;
+    position: relative;
+    left: 200px;
+}
+.social i{
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 0px 200px;
+}
+.social{
+    display: flex;
+}
+i{
+    color: #19238E;
+}
+i:hover{
+    color: blue;
+    transition: 0.3s ease-in-out;
+    scale: 1.1;
+}
+.socialLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+.parallax-effect {
+    background-image: url("../images/contact-us-image.jpg");
+    min-height: 900px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+/*--------- Centres-------- */
+.groupImage{
+    width: 100%;
+    position: relative;
+    top: -600px;
+    height: 0;
+}
+.colorWei{
+    color: gray;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 5px 2px 5px #fff;
+}
+.imageCentre{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imageCentre:hover{
+    color: rgb(163, 10, 184);
+}
+
+.imageSize{
+    width: 50%;
+    border-radius: 60px;
+    box-shadow: 1px 1px 8px grey;
+    border: 4mm ridge rgba(11, 7, 12, 0.6);
+}
+.imageSize:hover {
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    filter: brightness(115%);
+    
+}
+footer{
+    background: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textFooter{
+    color: #fff;
+    font-family: 'Oxygen';
+    font-size: 1rem;
+    text-align: center;
+
+}
+@media screen and (max-width: 768px){
+    .bannière{
+        width: 100%;
+        height: 300px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .MaPhoto__Set{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: -100px;
+        left: 100px;
+        border: thick double black;
+    }
+    .MoiInfo{
+       margin-top: 50px;
+    }
+    .Description{
+        position: relative;
+        top: -150px;
+        left: 80px;
+    }
+    .btnDL{
+        left: 30px;
+    }
+    .info-width{
+        left: 10px;
+        width: 90%;
+    }
+    .social i{
+        display: flex;
+        padding: 0px 0px;
+    }
+    .groupImage{
+        flex-direction: column;
+    }
+
+    .colorWei{
+        font-size: 1.3rem;
+    }
+    .groupImage{
+        top: -1140px;
+        height: 0;
+    }
+    .imageSize{
+        width: 60%;
+    }
+    .parallax-effect{
+        min-height: 950px;
+    }
+}
