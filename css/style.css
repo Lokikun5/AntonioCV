@@ -32,6 +32,19 @@ p{
 a{
     text-decoration: none;
 }
+.btnUp{
+    height: 100px;
+    width: 100px;
+    background: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
 /*---------- nav-------------*/
 .fontNav{
    font-family: 'Open Sans Condensed', sans-serif, Arial, Helvetica;
@@ -48,7 +61,7 @@ nav{
 }
 
 body{
-    width: 100%;
+    min-width: 100%;
 }
 
 /*-------- bannière----------------- */
@@ -70,6 +83,7 @@ body{
     box-shadow: 2px 2px 12px grey;
     transition: 0.3s ease-in-out;
     scale: 1.1;
+    cursor: crosshair;
 }
 /*----------- section ------------- */
 .Description{
@@ -110,6 +124,7 @@ body{
     left: 550px;
     top: -100px;
     font-weight: 600;
+    font-size: 1.1rem;
 }
 .btnDL:hover{
     filter: brightness(115%);
@@ -137,7 +152,7 @@ article{
     
     margin-left: 20px;
     margin-top: 20px;
-    padding: 0px 200px;
+    padding: 0px 170px;
 }
 .social{
     display: flex;
@@ -157,6 +172,37 @@ i:hover{
     align-items: center;
     color: green;
 }
+/*-------- experience------- */
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.oxy{
+    font-family: 'Oxygen';
+
+} 
+.experience-image{
+    width: 40%;
+    height: 300px;
+    
+    cursor: crosshair;
+    border: 1mm ridge rgba(170, 50, 220, .6);
+}
+.experience-image:hover{
+    scale: 1.1;
+    border-style: dotted;
+    transition: 0.3s ease-in-out;
+    filter: brightness(115%);
+}
+/*--------- Formation---------- */
+.Formation_width{
+    width: 50%;
+    position: relative;
+    left: 250px;
+}
 .parallax-effect {
     background-image: url("../images/contact-us-image.jpg");
     min-height: 900px; 
@@ -174,7 +220,7 @@ i:hover{
     height: 0;
 }
 .colorWei{
-    color: gray;
+    color: rgb(119, 73, 13);
     font-weight: 700;
     font-size: 3rem;
     text-shadow: 5px 2px 5px #fff;
@@ -193,14 +239,14 @@ i:hover{
 .imageSize{
     width: 50%;
     border-radius: 60px;
-    box-shadow: 1px 1px 8px grey;
-    border: 4mm ridge rgba(11, 7, 12, 0.6);
+    box-shadow: 1px 1px 2px grey;
+    border: 1mm ridge rgba(11, 7, 12, 0.6);
 }
 .imageSize:hover {
     scale: 1.1;
     transition: 0.3s ease-in-out;
-    filter: brightness(115%);
-    
+    filter: brightness(120%);
+    border: 2mm ridge rgba(238, 157, 7, 0.6);
 }
 footer{
     background: black;
@@ -268,4 +314,38 @@ footer{
     .parallax-effect{
         min-height: 950px;
     }
+    .Formation_width{
+        width: 90%;
+        position: relative;
+        left: 5px;
+        
+    }
+    .size{
+        font-size: 10px;
+    }
+    .experience-image{
+        width: 70%;
+        height: 200px;
+    }
 }
+/* @media screen and (max-width: 900px){
+    .MaPhoto__Set{
+        left: 200px;
+        width: 55%;
+        height: 55%;
+    }
+    .Description{
+        left: 160px;
+    }
+    .btnDL{
+        left: 200px;
+    }
+    .info-width{
+        left: 10px;
+        width: 90%;
+    }
+    .social i{
+        display: flex;
+        padding: 0px 10px;
+    }
+} */
