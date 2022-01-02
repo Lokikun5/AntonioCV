@@ -58,9 +58,14 @@ a{
     color: #5972C2;
 }
 nav{
+    width: 100%;
+    background: #fff;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     border-bottom: thick double black;
+    z-index: 6;
+    transition:  0.3s ease-in-out;
 }
 
 body{
