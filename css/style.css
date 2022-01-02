@@ -31,11 +31,13 @@ p{
 }
 a{
     text-decoration: none;
+    width: auto;
+    display:inline-block
 }
 .btnUp{
-    height: 100px;
-    width: 100px;
-    background: crimson;
+    height: 70px;
+    width: 70px;
+    background: #3498DB;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -44,6 +46,7 @@ a{
     right: 20px;
     bottom: 20px;
     cursor: pointer;
+    z-index: 6;
 }
 /*---------- nav-------------*/
 .fontNav{
@@ -72,6 +75,8 @@ body{
 .MaPhoto__Set{
     width: 20%;
     height: 20%;
+    margin: 0px;
+    padding: 0px;
     position: relative;
     top: -200px;
     left: 600px;
@@ -102,18 +107,19 @@ body{
 }
 .MoiInfo{
     width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Oxygen';
     font-size: 20px;
     position: relative;
     top: -160px;
-    
-
 }
 .btnDL{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
     background: linear-gradient(#9356DC, #FF79DA);
     border-radius: 40px;
     box-shadow: 1px 1px 8px grey;
@@ -131,6 +137,12 @@ body{
     box-shadow: 2px 2px 12px grey;
     transition: 0.3s ease-in-out;
     scale: 1.1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*----------------- article------------------------- */
 
@@ -328,24 +340,4 @@ footer{
         height: 200px;
     }
 }
-/* @media screen and (max-width: 900px){
-    .MaPhoto__Set{
-        left: 200px;
-        width: 55%;
-        height: 55%;
-    }
-    .Description{
-        left: 160px;
-    }
-    .btnDL{
-        left: 200px;
-    }
-    .info-width{
-        left: 10px;
-        width: 90%;
-    }
-    .social i{
-        display: flex;
-        padding: 0px 10px;
-    }
-} */
+
