@@ -17,6 +17,6 @@ window.addEventListener("scroll", () => {
     nav.style.height ="50px";
     }else {
         nav.style.background = "white";
-        nav.style.height ="80px";
+        nav.style.height ="90px";
     }
   })
