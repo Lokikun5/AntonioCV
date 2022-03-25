@@ -387,7 +387,7 @@ footer{
         border: thick double black;
     }
     .MoiInfo{
-       margin-top: 50px;
+       margin-top: 270px;
     }
     .Description{
         position: relative;
@@ -409,6 +409,7 @@ footer{
     }
     .groupImage{
         flex-direction: column;
+        margin-top: 460px;
     }
 
     .colorWei{
@@ -436,6 +437,9 @@ footer{
     .experience-image{
         width: 70%;
         height: 200px;
+    }
+    .marge{
+        margin-left: 0px;
     }
 }
 
