@@ -7,6 +7,7 @@
 .flex{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .space-around{
@@ -17,7 +18,7 @@
 }
 h2{
     font-family: 'Oxygen';
-    font-weight: 600;
+    font-weight: 500;
     font-size: 2rem;
 }
 h4{
@@ -48,15 +49,14 @@ a{
     cursor: pointer;
     z-index: 6;
 }
+
 /*---------- nav-------------*/
 .fontNav{
    font-family: 'Open Sans Condensed', sans-serif, Arial, Helvetica;
    font-size: 1.5rem; 
    font-weight: 200;
 }
-.flex:hover{
-    color: #5972C2;
-}
+
 nav{
     width: 100%;
     background: #fff;
@@ -74,9 +74,76 @@ body{
 }
 
 /*-------- bannière----------------- */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 20px 0;
+    position: relative;
+    top:-900px;
+    
+}
+p {
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 900;
+    color: transparent;
+    font-size: 0px;
+    
+}
+p span {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: clamp(20px, 8vw, 120px);
+    font-family: 'Palette Mosaic', cursive;
+    box-shadow: 10px 10px black;
+}
+p span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+p:nth-child(1) {
+    font-weight: 300;
+    animation: txt-appearance 0s 1s forwards;
+}
+p:nth-child(2) {
+    animation: txt-appearance 0s 1.25s forwards;
+}
+p:nth-child(1) span::after {
+    background: salmon;
+    animation: slide-in 0.75s ease-out forwards,
+    slide-out 0.75s 1s ease-out forwards;
+}
+p:nth-child(2) span::after {
+    background: royalblue;
+    animation: slide-in 0.75s 0.3s ease-out forwards,
+    slide-out 0.75s 1.3s ease-out forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-out {
+    100% {
+        transform: translateX(100%)
+    }
+}
+@keyframes txt-appearance {
+    100% {
+        color: #222;
+    }
+}
 .bannière{
     width: 100%;
-    height: 600px;
+    height: 45vw;
 }
 .MaPhoto__Set{
     width: 20%;
@@ -84,9 +151,28 @@ body{
     margin: 0px;
     padding: 0px;
     position: relative;
-    top: -200px;
-    left: 600px;
+    top: -400px;
+    left: 1000px;
     border: thick double black;
+    animation: apparition 2s forwards ;
+    animation: scale 2s forwards;
+}
+@keyframes scale{
+    0%{
+        scale: 0.1
+    }
+    100%{
+        scale: 1
+    }
+}
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+
 }
 .MaPhoto__Set:hover{
     filter: brightness(115%);
@@ -110,16 +196,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 1vw;
+
 }
 .MoiInfo{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Oxygen';
-    font-size: 20px;
+    text-align: center;
     position: relative;
-    top: -160px;
+    top: -500px;
 }
 .btnDL{
     display: flex;
@@ -133,8 +222,8 @@ body{
     height: 50px;
     cursor: pointer;
     position: relative;
-    left: 550px;
-    top: -100px;
+    left: 600px;
+    top: -300px;
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -158,7 +247,7 @@ article{
 }
 
 .marge{
-    margin-left: 20px;
+    margin-left: 190px;
 }
 
 .info-width{
@@ -203,7 +292,7 @@ i:hover{
 
 } 
 .experience-image{
-    width: 40%;
+    width: 100%;
     height: 300px;
     
     cursor: crosshair;
@@ -302,8 +391,10 @@ footer{
     }
     .Description{
         position: relative;
-        top: -150px;
+        top: 0px;
         left: 80px;
+        color: rgb(252, 26, 26);
+        z-index: 6;
     }
     .btnDL{
         left: 30px;

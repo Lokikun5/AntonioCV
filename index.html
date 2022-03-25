@@ -12,6 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <meta name="description" content="Bonjour je m’appelle Quadjovie Antonio, je me passionne depuis peu dans le développement et la conception de site web.
@@ -24,22 +27,32 @@
     <div class="btnUp">
         <i class="fas fa-arrow-up fa-2x"></i>
     </div>
-    <header>
+    
+    <header>  
         <nav>
             <div class="flex"><i class="fas fa-desktop fa-lg"></i><h2 class="fontNav">Quadjovie Antonio - Mon CV</h2></div>
             <div class="flex"><i class="fas fa-envelope-square fa-lg"></i><h2 class="fontNav">quadjovie.antonio@gmail.com</h2></div>
+            <div id="p1"></div>
         </nav>
     </header>
     <main>
         <img class="bannière" src="images/background.jpg" alt="background bannière Antonio"/>
         <img class="MaPhoto__Set" src="images/IMG_4560.png" alt="Ma photo"/>
+        <div class="container">
+            <p>
+                <span>
+                    bienvenue
+                </span>
+            </p>
+        </div>
         <section>
             <div class="MoiInfo flex">
                 <h1>Qui Suis-je ?</h1>
+            
+                <h2>
+                    Diplômé d’une certification professionnelle de développeur intégrateur web <br> je me passionne pour l’informatique et la conception de sites internet.
+                </h2>
             </div>
-            <p class="Description">
-                Diplômé d’une certification professionnelle de développeur intégrateur web, je me passionne pour l’informatique et la conception de sites internet.
-            </p>
             <a href="dl/CV-Quadjovie-Antonio.pdf"><div class="btnDL">Télécharger mon CV</div></a>
         </section>
         <article>
@@ -78,16 +91,24 @@
             <h2 class="marge">Experiences professionnelles</h2>
             
                 <div class="experience">
-                    <img class="experience-image" src="images/2021-12-27.png" alt="site Denkidomo">
+                    <a href="https://github.com/Lokikun5/denkidomo "target=_blank"><img class="experience-image" src="images/2021-12-27.png" alt="site Denkidomo"></a>
                     <h3 class="oxy">Site vitrine, entreprise spécialisée dans la domotique</h3>
                 </div>
                 <div class="experience">
-                    <img class="experience-image" src="images/OCprojet.png" alt=" projet Openclassrooms">
+                    <a href="https://lokikun5.github.io/P1_antonio_quadjovie-/"target=_blank"><img class="experience-image" src="images/OCprojet.png" alt=" projet Openclassrooms"></a>
                     <h3 class="oxy">Intégration maquette projet Openclassrooms</h3>
                 </div>
                 <div class="experience">
-                    <img class="experience-image" src="images/Image 2.png" alt=" projet Openclassrooms">
+                    <a href="https://github.com/Lokikun5/P6_Quadjovie_Antonio "target=_blank"><img class="experience-image" src="images/Image 2.png" alt=" projet Openclassrooms"></a>
                     <h3 class="oxy">création d’une API avec express JS, utilisation de mougouse pour la base de donnée et les différents package node (bcrypt, jsonwebtoken, multer, helmet) </h3>
+                </div>
+                <div class="experience">
+                    <a href="https://github.com/Lokikun5/P7_antonio_quadjovieF"target=_blank"><img class="experience-image" src="images/Image 1.png" alt=" projet Openclassrooms"></a>
+                    <h3 class="oxy">
+                        Projet final openclassrooms. 
+                        Création d’une application de réseaux social. 
+                        Avec Vue.js et Mysql
+                    </h3>
                 </div>
             
         </article>
@@ -153,5 +174,6 @@
 
     </footer>
     <script src="js/app.js"></script>
+    
 </body>
 </html>
