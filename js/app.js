@@ -4,6 +4,7 @@
 const btnUp = document.querySelector('.btnUp');
 const nav = document.querySelector("nav");
 
+
 let date1 = new Date();
 
 //---------------------- parametre de date
@@ -36,7 +37,8 @@ btnUp.addEventListener('click', () =>{
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 120) {
-    nav.style.background = "#2830AA";
+    nav.style.background = "#8DA0CC";
+    nav.style.opacity = "0.90";
     nav.style.height ="50px";
     }else {
         nav.style.background = "white";
@@ -44,5 +46,21 @@ window.addEventListener("scroll", () => {
     }
   })
 
-  
+
+const slidingNewsletter = document.querySelector('.slide-in');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    console.log(scrollTop, clientHeight);
+
+    const topElementToTopViewport = slidingNewsletter.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.60){
+        slidingNewsletter.classList.add('active')
+    }
+})
 
