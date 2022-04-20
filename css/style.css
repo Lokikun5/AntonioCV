@@ -239,6 +239,9 @@ main{
     justify-content: center;
     align-items: center;
 }
+video{
+    width: 100%;
+}
 /*----------------- article------------------------- */
 
 article{
@@ -248,6 +251,7 @@ article{
 
 .marge{
     margin-left: 190px;
+    margin-bottom: 100px;
 }
 
 .info-width{
@@ -278,6 +282,7 @@ i:hover{
     justify-content: center;
     align-items: center;
     color: green;
+    width: 90%;
 }
 /*-------- experience------- */
 
@@ -295,7 +300,7 @@ i:hover{
 }
 .parallax-effect {
     background-image: url("../images/contact-us-image.jpg");
-    min-height: 900px; 
+    min-height: 1000px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,7 +321,7 @@ i:hover{
     text-shadow: 5px 2px 5px #fff;
 }
 .imageCentre{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -327,7 +332,7 @@ i:hover{
 }
 
 .imageSize{
-    width: 50%;
+    width: 60%;
     border-radius: 60px;
     box-shadow: 1px 1px 2px grey;
     border: 1mm ridge rgba(11, 7, 12, 0.6);
@@ -376,10 +381,13 @@ footer{
 .carte{
     border: solid 3px black;
     border-radius: 30px;
+    box-shadow: 5px 3px 10px rgb(3, 3, 3);
     width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .carte:hover{
     scale: 1.1;
@@ -394,12 +402,16 @@ footer{
 }
 .img-exp{
     position: relative;
-    top: -12px;
+    top: 0px;
 }
 
 .img-exp2{
     position: relative;
-    top: -20px;
+    top: 0px;
+}
+.img-exp5{
+    
+    top: 1000px;
 }
 @media screen and (max-width: 768px){
     .bannière{
