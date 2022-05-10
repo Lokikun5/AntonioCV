@@ -378,6 +378,13 @@ footer{
     flex-wrap: wrap;
     gap: 30px;
 }
+@media screen and (max-width: 768px){
+    .carte-group{
+        flex-direction: column;
+    }
+    
+}
+
 .carte{
     border: solid 3px black;
     border-radius: 30px;
@@ -388,6 +395,11 @@ footer{
     justify-content: center;
     align-items: center;
 
+}
+@media screen and (max-width: 768px){
+    .carte{
+        width: 100%;
+    }
 }
 .carte:hover{
     scale: 1.1;
@@ -460,9 +472,10 @@ footer{
         font-size: 1.3rem;
     }
     .groupImage{
-        top: -1140px;
+        top: -1010px;
         height: 0;
     }
+    
     .imageSize{
         width: 60%;
     }
